@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Earth Globe</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="canvas-container">
+        <div class="loading" id="loading">Loading Earth...</div>
+        <div id="info">
+            <h1>Interactive Earth Globe</h1>
+            <p>Drag to rotate • Scroll to zoom • Click markers for info</p>
+        </div>
+        <div class="controls">
+            <button onclick="toggleRotation()"> Pause/Play</button>
+            <button onclick="resetView()">Reset View</button>
+            <button onclick="addScanLines()">Scan Mode</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
